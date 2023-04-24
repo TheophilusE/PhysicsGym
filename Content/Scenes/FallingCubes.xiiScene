@@ -11,18 +11,22 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{615806677911328814,11163343703302743224}}
-		u4 %Hash{13657434985537867664}
+		u4 %Hash{8747587220579441111}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
+			s{"{ 0779a0ff-797d-4e70-b184-cbb11f739433 }"}
 			s{"{ 0b202e08-a64f-465d-b38e-15b81d161822 }"}
 			s{"{ 4d641709-cdb8-4ae8-a5ac-0cfd82a5a75f }"}
+			s{"{ 618ee743-ed04-4fac-bf5f-572939db2f1d }"}
 			s{"{ ca4ffce1-3d7e-4186-a7aa-971b44472e9a }"}
 		}
 		VarArray %References
 		{
+			s{"{ 0779a0ff-797d-4e70-b184-cbb11f739433 }"}
 			s{"{ 0b202e08-a64f-465d-b38e-15b81d161822 }"}
+			s{"{ 618ee743-ed04-4fac-bf5f-572939db2f1d }"}
 		}
 	}
 }
@@ -42,9 +46,10 @@ o
 		{
 			Uuid{u4{12906290780324034229,5592060314631454110}}
 			Uuid{u4{15306647656854669721,5433081118545573255}}
+			Uuid{u4{7714171009291080840,4984764748151030254}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x00001042,0x00001442,0x0000F041}}
+		Vec3 %LocalPosition{f{0,0,0x0000F041}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
@@ -54,6 +59,62 @@ o
 		{
 			s{"CastShadow"}
 		}
+	}
+}
+o
+{
+	Uuid %id{u4{5731580989856784053,4982037484097780481}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{10849502981564752298,5384340180364100528}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{"Animation"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{7714171009291080840,4984764748151030254}}
+	s %t{"xiiMeshComponent"}
+	u3 %v{3}
+	p
+	{
+		b %Active{1}
+		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		VarArray %Materials{}
+		s %Mesh{"{ 618ee743-ed04-4fac-bf5f-572939db2f1d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10849502981564752298,5384340180364100528}}
+	s %t{"xiiPropertyAnimComponent"}
+	u3 %v{3}
+	p
+	{
+		b %Active{1}
+		s %Animation{"{ 0779a0ff-797d-4e70-b184-cbb11f739433 }"}
+		s %Mode{"xiiPropertyAnimMode::Loop"}
+		b %Playing{1}
+		Time %RandomOffset{d{0}}
+		Time %RangeHigh{d{0x000000000020AC40}}
+		Time %RangeLow{d{0}}
+		f %Speed{0x0000803F}
 	}
 }
 o
@@ -77,7 +138,7 @@ o
 	u3 %v{3}
 	p
 	{
-		b %Active{1}
+		b %Active{0}
 		b %AttachAsChild{0}
 		Time %DelayRange{d{0}}
 		Angle %Deviation{f{0}}
@@ -101,6 +162,7 @@ o
 			Uuid{u4{1402347355399032612,10510020523940903921}}
 			Uuid{u4{13161806470379808606,10729954802938382267}}
 			Uuid{u4{2903259975018613897,4918528558541024959}}
+			Uuid{u4{5731580989856784053,4982037484097780481}}
 		}
 		Uuid %Settings{u4{14972831665058039620,10692205306028999333}}
 	}
@@ -525,6 +587,23 @@ o
 }
 o
 {
+	Uuid %id{u4{3332024608391853149,1731128973537009778}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiPropertyAnimComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
 	Uuid %id{u4{13567872209078923000,1922474374117756679}}
 	s %t{"xiiReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -678,6 +757,23 @@ o
 }
 o
 {
+	Uuid %id{u4{17566502124871777841,5944301875081005991}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiMeshComponentBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiMeshComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
 	Uuid %id{u4{17137289953408618306,6680036317484412198}}
 	s %t{"xiiReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -780,6 +876,23 @@ o
 }
 o
 {
+	Uuid %id{u4{271255795241519625,11739111245589357842}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::IsEnum|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiPropertyAnimMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{1152577461141646064,12605678956562872998}}
 	s %t{"xiiReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -860,6 +973,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"xiiGameObject"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{15151705527422775286,15916594601889180542}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Abstract|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiRenderComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiMeshComponentBase"}
 		u3 %TypeVersion{1}
 	}
 }
