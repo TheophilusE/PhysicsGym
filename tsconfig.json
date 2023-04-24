@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": "",
+    "paths": {
+      "*": ["C:/Development/Projects/XII/PhysicsGym/*", "C:/Development/XII/XII/Data/Plugins/*", "C:/Development/XII/XII/Data/Base/*"]
+    }    
+  }
+}

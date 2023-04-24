@@ -1,0 +1,934 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{615806677911328814,11163343703302743224}}
+	s %t{"xiiAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"Scene"}
+		VarArray %Dependencies{}
+		Uuid %DocumentID{u4{615806677911328814,11163343703302743224}}
+		u4 %Hash{16713262256541923734}
+		VarArray %MetaInfo{}
+		VarArray %Outputs{}
+		VarArray %PackageDeps
+		{
+			s{"{ 0b202e08-a64f-465d-b38e-15b81d161822 }"}
+			s{"{ 4d641709-cdb8-4ae8-a5ac-0cfd82a5a75f }"}
+			s{"{ ca4ffce1-3d7e-4186-a7aa-971b44472e9a }"}
+		}
+		VarArray %References
+		{
+			s{"{ 0b202e08-a64f-465d-b38e-15b81d161822 }"}
+		}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{2903259975018613897,4918528558541024959}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{12906290780324034229,5592060314631454110}}
+			Uuid{u4{15306647656854669721,5433081118545573255}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0x0000F041}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{"CubeSpawner"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{15306647656854669721,5433081118545573255}}
+	s %t{"xiiTypeScriptComponent"}
+	u3 %v{4}
+	p
+	{
+		b %Active{1}
+		b %HandleGlobalEvents{0}
+		VarDict %Parameters{}
+		b %PassThroughUnhandledEvents{0}
+		s %Script{"{ 4d641709-cdb8-4ae8-a5ac-0cfd82a5a75f }"}
+	}
+}
+o
+{
+	Uuid %id{u4{12906290780324034229,5592060314631454110}}
+	s %t{"xiiSpawnComponent"}
+	u3 %v{3}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		Time %DelayRange{d{0}}
+		Angle %Deviation{f{0}}
+		Time %MinDelay{d{0x7B14AE47E17A843F}}
+		VarDict %Parameters{}
+		s %Prefab{"{ ca4ffce1-3d7e-4186-a7aa-971b44472e9a }"}
+		b %SpawnAtStart{1}
+		b %SpawnContinuously{1}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"xiiSceneDocumentRoot"}
+	u3 %v{2}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{1402347355399032612,10510020523940903921}}
+			Uuid{u4{13161806470379808606,10729954802938382267}}
+			Uuid{u4{2903259975018613897,4918528558541024959}}
+		}
+		Uuid %Settings{u4{14972831665058039620,10692205306028999333}}
+	}
+}
+o
+{
+	Uuid %id{u4{15019656651535452246,10402564926427799607}}
+	s %t{"xiiSceneLayer"}
+	u3 %v{1}
+	p
+	{
+		Uuid %Layer{u4{615806677911328814,11163343703302743224}}
+	}
+}
+o
+{
+	Uuid %id{u4{6617670871023051608,10420300948283565954}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{3934639467876907316,10975953766715862416}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0x00000040}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{1402347355399032612,10510020523940903921}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{5506897886072384829,10614052970920283015}}
+			Uuid{u4{7542449760873069354,10885864228435378240}}
+			Uuid{u4{15353394379893143084,10585635837030804193}}
+			Uuid{u4{6617670871023051608,10420300948283565954}}
+		}
+		VarArray %Components{}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{"Environment"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{7220946411771080542,10530495860135448009}}
+	s %t{"xiiSkyBoxComponent"}
+	u3 %v{4}
+	p
+	{
+		b %Active{1}
+		s %CubeMap{"{ 0b202e08-a64f-465d-b38e-15b81d161822 }"}
+		f %ExposureBias{0x0000803F}
+		b %InverseTonemap{0}
+		b %UseFog{1}
+		f %VirtualDistance{0x00007A44}
+	}
+}
+o
+{
+	Uuid %id{u4{15353394379893143084,10585635837030804193}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{17110157919779683897,10877265829195792385}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x0000A0C0,0,0x00000040}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{"Scene Thumbnail Camera"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{5506897886072384829,10614052970920283015}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{7424107243104502312,11021234986584714325}}
+			Uuid{u4{5517202617641350476,11464984944621183958}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0x00000040}}
+		Quat %LocalRotation{f{0xBE2BA7BE,0xBD2BA73E,0xED90203F,0xEC90203F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{14972831665058039620,10692205306028999333}}
+	s %t{"xiiSceneDocumentSettings"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Layers
+		{
+			Uuid{u4{15019656651535452246,10402564926427799607}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{13161806470379808606,10729954802938382267}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{16161910425224204070,10910011311540768997}}
+		}
+		VarArray %Components{}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{"Geometry"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{17110157919779683897,10877265829195792385}}
+	s %t{"xiiCameraComponent"}
+	u3 %v{10}
+	p
+	{
+		b %Active{1}
+		f %Aperture{0x0000803F}
+		s %CameraRenderPipeline{""}
+		f %Dimensions{0x00002041}
+		i1 %EditorShortcut{1}
+		VarArray %ExcludeTags{}
+		f %ExposureCompensation{0}
+		f %FOV{0x00007042}
+		f %FarPlane{0x00007A44}
+		f %ISO{0x0000C842}
+		VarArray %IncludeTags{}
+		s %Mode{"xiiCameraMode::PerspectiveFixedFovY"}
+		f %NearPlane{0x0000803E}
+		s %RenderTarget{""}
+		Vec2 %RenderTargetOffset{f{0,0}}
+		Vec2 %RenderTargetSize{f{0x0000803F,0x0000803F}}
+		b %ShowStats{0}
+		Time %ShutterTime{d{0x000000000000F03F}}
+		s %UsageHint{"xiiCameraUsageHint::Thumbnail"}
+	}
+}
+o
+{
+	Uuid %id{u4{7542449760873069354,10885864228435378240}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{7220946411771080542,10530495860135448009}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0x0000803F}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"SkyLight"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{16161910425224204070,10910011311540768997}}
+	s %t{"xiiGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{18439890537680057180,11025217952691229952}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"xiiObjectMode::Automatic"}
+		s %Name{"Floor"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{3934639467876907316,10975953766715862416}}
+	s %t{"xiiSphereReflectionProbeComponent"}
+	u3 %v{2}
+	p
+	{
+		b %Active{1}
+		Vec3 %CaptureOffset{f{0,0,0}}
+		VarArray %ExcludeTags
+		{
+			s{"SkyLight"}
+		}
+		f %Falloff{0xCDCCCC3D}
+		f %FarPlane{0x0000C842}
+		VarArray %IncludeTags{}
+		f %NearPlane{0}
+		f %Radius{0x00004842}
+		s %ReflectionProbeMode{"xiiReflectionProbeMode::Static"}
+		b %ShowDebugInfo{0}
+		b %ShowMipMaps{0}
+		b %SphereProjection{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7424107243104502312,11021234986584714325}}
+	s %t{"xiiSkyLightComponent"}
+	u3 %v{3}
+	p
+	{
+		b %Active{1}
+		s %CubeMap{""}
+		VarArray %ExcludeTags{}
+		f %FarPlane{0x0000C842}
+		VarArray %IncludeTags
+		{
+			s{"SkyLight"}
+		}
+		f %Intensity{0x0000003F}
+		f %NearPlane{0}
+		s %ReflectionProbeMode{"xiiReflectionProbeMode::Dynamic"}
+		f %Saturation{0x0000803F}
+		b %ShowDebugInfo{0}
+		b %ShowMipMaps{0}
+	}
+}
+o
+{
+	Uuid %id{u4{18439890537680057180,11025217952691229952}}
+	s %t{"xiiGreyBoxComponent"}
+	u3 %v{5}
+	p
+	{
+		b %Active{1}
+		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Angle %Curvature{f{0}}
+		u3 %Detail{16}
+		b %GenerateCollision{1}
+		b %IncludeInNavmesh{1}
+		s %Material{""}
+		s %Shape{"xiiGreyBoxShape::Box"}
+		f %SizeNegX{0x0000C842}
+		f %SizeNegY{0x0000C842}
+		f %SizeNegZ{0x0000803F}
+		f %SizePosX{0x0000C842}
+		f %SizePosY{0x0000C842}
+		f %SizePosZ{0}
+		b %SlopedBottom{0}
+		b %SlopedTop{0}
+		f %Thickness{0x0000003F}
+		b %UseAsOccluder{1}
+	}
+}
+o
+{
+	Uuid %id{u4{5517202617641350476,11464984944621183958}}
+	s %t{"xiiDirectionalLightComponent"}
+	u3 %v{3}
+	p
+	{
+		b %Active{1}
+		b %CastShadows{0}
+		f %ConstantBias{0xCDCCCC3D}
+		f %FadeOutStart{0xCDCC4C3F}
+		f %Intensity{0x0000A040}
+		ColorGamma %LightColor{u1{255,255,255,255}}
+		f %MinShadowRange{0x0000F041}
+		f %NearPlaneOffset{0x0000C842}
+		u3 %NumCascades{2}
+		f %PenumbraSize{0xCDCCCC3D}
+		f %SlopeBias{0x0000803E}
+		f %SplitModeWeight{0x3333333F}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{5052347763945628380,435550393878035160}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Abstract|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiRenderComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{15383513401642268531,713521644519232159}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::IsEnum|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiGreyBoxShape"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{9226282184799143543,890648536848432523}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiLightComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiDirectionalLightComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{1806006595755264957,1330264583885842403}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13567872209078923000,1922474374117756679}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSpawnComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{8224268647907297484,2300230217040154700}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{12730005971257422923,2484047852288417750}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiDocumentRoot"}
+		s %PluginName{"xiiEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSceneDocumentRoot"}
+		u3 %TypeVersion{2}
+	}
+}
+o
+{
+	Uuid %id{u4{9759861867649945642,2767165370923051034}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiSettingsComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSkyLightComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{9096873233824075662,3556765773847196395}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiSceneLayerBase"}
+		s %PluginName{"xiiEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSceneLayer"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{12900189152708329072,4409986512562078911}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiRenderComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiGreyBoxComponent"}
+		u3 %TypeVersion{5}
+	}
+}
+o
+{
+	Uuid %id{u4{7113270210448903041,4914649027248066584}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::IsEnum|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiObjectMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{8293817871522742186,5509176116882368111}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::IsEnum|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiCameraUsageHint"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{10618245633446215510,5860315633164980819}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Abstract|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiEventMessageHandlerComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{17137289953408618306,6680036317484412198}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Abstract|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiRenderComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiLightComponent"}
+		u3 %TypeVersion{4}
+	}
+}
+o
+{
+	Uuid %id{u4{4420644391346770952,8866878917676252084}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiReflectedClass"}
+		s %PluginName{"xiiEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSceneDocumentSettingsBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{8614125061294656017,9298787634358739854}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiEventMessageHandlerComponent"}
+		s %PluginName{"xiiEditorPluginTypeScript"}
+		VarArray %Properties{}
+		s %TypeName{"xiiTypeScriptComponent"}
+		u3 %TypeVersion{4}
+	}
+}
+o
+{
+	Uuid %id{u4{504178517179490079,10332722785636612917}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Abstract|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{9956318041431964663,10379274544650185404}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Abstract|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiReflectionProbeComponentBase"}
+		u3 %TypeVersion{2}
+	}
+}
+o
+{
+	Uuid %id{u4{6543640678001033675,11605026245766860954}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiReflectionProbeComponentBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSphereReflectionProbeComponent"}
+		u3 %TypeVersion{2}
+	}
+}
+o
+{
+	Uuid %id{u4{1152577461141646064,12605678956562872998}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::IsEnum|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiCameraMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13903338912222738261,13002913006025063119}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiReflectedClass"}
+		s %PluginName{"xiiEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSceneLayerBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{8427363426721237003,14410981258740180924}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiSceneDocumentSettingsBase"}
+		s %PluginName{"xiiEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSceneDocumentSettings"}
+		u3 %TypeVersion{2}
+	}
+}
+o
+{
+	Uuid %id{u4{2549253528611095696,14580648017008598692}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Abstract|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSettingsComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{4959089980164382630,15193493213242724458}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiGameObject"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{11757360558073105519,15956676577570765383}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{876495543183856803,15968129936241341506}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiRenderComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiSkyBoxComponent"}
+		u3 %TypeVersion{4}
+	}
+}
+o
+{
+	Uuid %id{u4{531364363951921770,16668611976208663395}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiCameraComponent"}
+		u3 %TypeVersion{10}
+	}
+}
+o
+{
+	Uuid %id{u4{8982069253756237104,17493858169954988686}}
+	s %t{"xiiReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"xiiTypeFlags::IsEnum|xiiTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"xiiEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"xiiReflectionProbeMode"}
+		u3 %TypeVersion{1}
+	}
+}
+}
