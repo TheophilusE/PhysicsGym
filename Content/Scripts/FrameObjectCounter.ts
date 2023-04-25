@@ -40,8 +40,6 @@ export class FrameObjectCounter extends xii.TickedTypescriptComponent
       objectDesc.ActiveFlag = true;
       objectDesc.Dynamic = true;
       objectDesc.LocalPosition = owner.GetGlobalPosition();
-      // objectDesc.LocalRotation = new xii.Quat(0.0, 0.0, 0.0);
-      // objectDesc.LocalScaling = new xii.Vec3(0.0, 0.0, 0.0);
     }
 
     let spawnedObject : xii.GameObject =  xii.World.CreateObject(objectDesc);
