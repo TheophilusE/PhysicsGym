@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{615806677911328814,11163343703302743224}}
-		u4 %Hash{8747587220579441111}
+		u4 %Hash{9424705700787858508}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -20,7 +20,6 @@ o
 			s{"{ 0b202e08-a64f-465d-b38e-15b81d161822 }"}
 			s{"{ 4d641709-cdb8-4ae8-a5ac-0cfd82a5a75f }"}
 			s{"{ 618ee743-ed04-4fac-bf5f-572939db2f1d }"}
-			s{"{ ca4ffce1-3d7e-4186-a7aa-971b44472e9a }"}
 		}
 		VarArray %References
 		{
@@ -44,7 +43,6 @@ o
 		VarArray %Children{}
 		VarArray %Components
 		{
-			Uuid{u4{12906290780324034229,5592060314631454110}}
 			Uuid{u4{15306647656854669721,5433081118545573255}}
 			Uuid{u4{7714171009291080840,4984764748151030254}}
 		}
@@ -69,7 +67,10 @@ o
 	p
 	{
 		b %Active{1}
-		VarArray %Children{}
+		VarArray %Children
+		{
+			Uuid{u4{2903259975018613897,4918528558541024959}}
+		}
 		VarArray %Components
 		{
 			Uuid{u4{10849502981564752298,5384340180364100528}}
@@ -109,12 +110,12 @@ o
 	{
 		b %Active{1}
 		s %Animation{"{ 0779a0ff-797d-4e70-b184-cbb11f739433 }"}
-		s %Mode{"xiiPropertyAnimMode::Loop"}
+		s %Mode{"xiiPropertyAnimMode::BackAndForth"}
 		b %Playing{1}
 		Time %RandomOffset{d{0}}
 		Time %RangeHigh{d{0x000000000020AC40}}
 		Time %RangeLow{d{0}}
-		f %Speed{0x0000803F}
+		f %Speed{0x00000040}
 	}
 }
 o
@@ -133,24 +134,6 @@ o
 }
 o
 {
-	Uuid %id{u4{12906290780324034229,5592060314631454110}}
-	s %t{"xiiSpawnComponent"}
-	u3 %v{3}
-	p
-	{
-		b %Active{0}
-		b %AttachAsChild{0}
-		Time %DelayRange{d{0}}
-		Angle %Deviation{f{0}}
-		Time %MinDelay{d{0x7B14AE47E17A843F}}
-		VarDict %Parameters{}
-		s %Prefab{"{ ca4ffce1-3d7e-4186-a7aa-971b44472e9a }"}
-		b %SpawnAtStart{1}
-		b %SpawnContinuously{1}
-	}
-}
-o
-{
 	Uuid %id{u4{18096612296587978288,6449934965513159559}}
 	s %t{"xiiSceneDocumentRoot"}
 	u3 %v{2}
@@ -161,7 +144,6 @@ o
 		{
 			Uuid{u4{1402347355399032612,10510020523940903921}}
 			Uuid{u4{13161806470379808606,10729954802938382267}}
-			Uuid{u4{2903259975018613897,4918528558541024959}}
 			Uuid{u4{5731580989856784053,4982037484097780481}}
 		}
 		Uuid %Settings{u4{14972831665058039620,10692205306028999333}}
@@ -599,23 +581,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"xiiPropertyAnimComponent"}
-		u3 %TypeVersion{3}
-	}
-}
-o
-{
-	Uuid %id{u4{13567872209078923000,1922474374117756679}}
-	s %t{"xiiReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"xiiTypeFlags::Class|xiiTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"xiiComponent"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"xiiSpawnComponent"}
 		u3 %TypeVersion{3}
 	}
 }
